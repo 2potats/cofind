@@ -1,18 +1,18 @@
 <script>
 	import Header from '$lib/header/Header.svelte';
+	import Footer from '$lib/footer/Footer.svelte';
 	import '../app.css';
 </script>
 
-<Header />
+<div class="flex flex-col h-screen justify-between">
+	<Header />
+	<main>
+		<slot />
+	</main>
+	<Footer />
+</div>
 
-<main>
-	<slot />
-</main>
-
-<footer>
-	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-</footer>
-
+<!-- 
 <style>
 	main {
 		flex: 1;
@@ -42,4 +42,4 @@
 			padding: 40px 0;
 		}
 	}
-</style>
+</style> -->

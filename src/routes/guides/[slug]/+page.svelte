@@ -1,7 +1,11 @@
 <script>
-  /** @type {import('./$types').PageData} */
-  export let data;
+	/** @type {import('./$types').PageData} */
+	export let data;
 </script>
 
-<h1>{data.title}</h1>
-<div class="text-3xl font-bold underline">{@html data.content}</div>
+<section class="container mx-auto mt-28 p-12 bg-white rounded shadow-lg">
+	<article class="leading-8">
+		<h1 class="my-4 text-4xl font-bold leading-tight">{data.title}</h1>
+		<div class=" ">{@html data.content}</div>
+	</article>
+</section>

@@ -69,7 +69,7 @@
 	{/each}
 </div>
 
-<style>
+<!-- <style>
 	.todos {
 		width: 100%;
 		max-width: var(--column-width);
@@ -177,4 +177,4 @@
 		transition: opacity 0.2s;
 		opacity: 1;
 	}
-</style>
+</style> -->
