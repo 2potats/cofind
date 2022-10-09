@@ -1,127 +1,79 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from './svelte-logo.svg';
 </script>
 
 <header>
-	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
-		</a>
-	</div>
-
-	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-		</svg>
-		<ul>
-			<li class:active={$page.url.pathname === '/'}><a sveltekit:prefetch href="/">Home</a></li>
-			<li class:active={$page.url.pathname === '/about'}>
-				<a sveltekit:prefetch href="/about">About</a>
-			</li>
-			<li class:active={$page.url.pathname === '/guides'}>
-				<a sveltekit:prefetch href="/guides">Guides</a>
-			</li>
-			<li class:active={$page.url.pathname === '/todos'}>
-				<a sveltekit:prefetch href="/todos">Todos</a>
-			</li>
-		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
+	<!--Nav-->
+	<nav id="header" class="fixed w-full z-30 top-0 shadow-lg gradient">
+		<div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+			<div class="pl-4 flex items-center">
+				<a class="no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="/">
+					<!--Icon from: http://www.potlabicons.com/ -->
+					<svg
+						class="h-8 fill-current inline"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 512.005 512.005"
+					>
+						<rect
+							fill="#2a2a31"
+							x="16.539"
+							y="425.626"
+							width="479.767"
+							height="50.502"
+							transform="matrix(1,0,0,1,0,0)"
+						/>
+						<path
+							class="plane-take-off"
+							d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z "
+						/>
+					</svg>
+					RAYSE
+				</a>
+			</div>
+			<div class="block lg:hidden pr-4">
+				<button
+					id="nav-toggle"
+					class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+				>
+					<svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+						<title>Menu</title>
+						<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+					</svg>
+				</button>
+			</div>
+			<div
+				class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
+				id="nav-content"
+			>
+				<ul class="list-reset lg:flex justify-end flex-1 items-center">
+					<li class="mr-3" class:font-semibold={$page.url.pathname === '/'}>
+						<a class="inline-block py-2 px-4 text-black no-underline" sveltekit:prefetch href="/"
+							>Home</a
+						>
+					</li>
+					<li class="mr-3" class:font-semibold={$page.url.pathname === '/guides'}>
+						<a
+							class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+							sveltekit:prefetch
+							href="/guides">Guides</a
+						>
+					</li>
+					<li class="mr-3" class:font-semibold={$page.url.pathname === '/about'}>
+						<a
+							class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+							sveltekit:prefetch
+							href="/about">About</a
+						>
+					</li>
+				</ul>
+				<!-- <button
+					id="navAction"
+					class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-xl mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+				>
+					Action
+				</button> -->
+			</div>
+		</div>
+		<!-- <hr class="border-b border-gray-100 opacity-25 my-0 py-0" /> -->
 	</nav>
-
-	<div class="corner">
-		<!-- TODO put something else here? github link? -->
-	</div>
 </header>
-
-<style>
-	header {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.corner {
-		width: 3em;
-		height: 3em;
-	}
-
-	.corner a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
-	}
-
-	.corner img {
-		width: 2em;
-		height: 2em;
-		object-fit: contain;
-	}
-
-	nav {
-		display: flex;
-		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
-	}
-
-	svg {
-		width: 2em;
-		height: 3em;
-		display: block;
-	}
-
-	path {
-		fill: var(--background);
-	}
-
-	ul {
-		position: relative;
-		padding: 0;
-		margin: 0;
-		height: 3em;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		list-style: none;
-		background: var(--background);
-		background-size: contain;
-	}
-
-	li {
-		position: relative;
-		height: 100%;
-	}
-
-	li.active::before {
-		--size: 6px;
-		content: '';
-		width: 0;
-		height: 0;
-		position: absolute;
-		top: 0;
-		left: calc(50% - var(--size));
-		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--accent-color);
-	}
-
-	nav a {
-		display: flex;
-		height: 100%;
-		align-items: center;
-		padding: 0 1em;
-		color: var(--heading-color);
-		font-weight: 700;
-		font-size: 0.8rem;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		text-decoration: none;
-		transition: color 0.2s linear;
-	}
-
-	a:hover {
-		color: var(--accent-color);
-	}
-</style>
