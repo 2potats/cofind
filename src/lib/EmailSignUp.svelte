@@ -31,10 +31,12 @@
 		// local
 		// const url = 'http://localhost:8888';
 		// draft
-		// const url = 'https://63439b72b7b1ef22e808eafd--rayse-sign-up.netlify.app';
+		// const url = 'https://6343a2fa9a2db32a0fd9db38--rayse-sign-up.netlify.app';
 		// prod
-		const url = 'https://rayse-sign-up.netlify.app';
-		const response = await fetch(`${url}/api/index`, options);
+		// const url = 'https://rayse-sign-up.netlify.app';
+		// prod 2
+		const url = 'https://rayse-signup-fn.netlify.app';
+		const response = await fetch(`${url}/api/email`, options);
 
 		if (response.ok) {
 			console.log('woot! ', response);

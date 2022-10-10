@@ -1,34 +1,34 @@
 {
-  "node_modules/@fontsource/fira-mono/files/fira-mono-greek-ext-400-normal.woff2": {
-    "file": "_app/immutable/assets/fira-mono-greek-ext-400-normal-9e2fe623.woff2",
-    "src": "node_modules/@fontsource/fira-mono/files/fira-mono-greek-ext-400-normal.woff2"
+  "node_modules/@fontsource/fira-mono/files/fira-mono-latin-ext-400-normal.woff2": {
+    "file": "_app/immutable/assets/fira-mono-latin-ext-400-normal-6bfabd30.woff2",
+    "src": "node_modules/@fontsource/fira-mono/files/fira-mono-latin-ext-400-normal.woff2"
   },
   "node_modules/@fontsource/fira-mono/files/fira-mono-greek-400-normal.woff2": {
     "file": "_app/immutable/assets/fira-mono-greek-400-normal-a8be01ce.woff2",
     "src": "node_modules/@fontsource/fira-mono/files/fira-mono-greek-400-normal.woff2"
   },
-  "node_modules/@fontsource/fira-mono/files/fira-mono-cyrillic-ext-400-normal.woff2": {
-    "file": "_app/immutable/assets/fira-mono-cyrillic-ext-400-normal-3df7909e.woff2",
-    "src": "node_modules/@fontsource/fira-mono/files/fira-mono-cyrillic-ext-400-normal.woff2"
+  "node_modules/@fontsource/fira-mono/files/fira-mono-greek-ext-400-normal.woff2": {
+    "file": "_app/immutable/assets/fira-mono-greek-ext-400-normal-9e2fe623.woff2",
+    "src": "node_modules/@fontsource/fira-mono/files/fira-mono-greek-ext-400-normal.woff2"
   },
   "node_modules/@fontsource/fira-mono/files/fira-mono-latin-400-normal.woff2": {
     "file": "_app/immutable/assets/fira-mono-latin-400-normal-e43b3538.woff2",
     "src": "node_modules/@fontsource/fira-mono/files/fira-mono-latin-400-normal.woff2"
   },
+  "node_modules/@fontsource/fira-mono/files/fira-mono-cyrillic-ext-400-normal.woff2": {
+    "file": "_app/immutable/assets/fira-mono-cyrillic-ext-400-normal-3df7909e.woff2",
+    "src": "node_modules/@fontsource/fira-mono/files/fira-mono-cyrillic-ext-400-normal.woff2"
+  },
   "node_modules/@fontsource/fira-mono/files/fira-mono-cyrillic-400-normal.woff2": {
     "file": "_app/immutable/assets/fira-mono-cyrillic-400-normal-c7d433fd.woff2",
     "src": "node_modules/@fontsource/fira-mono/files/fira-mono-cyrillic-400-normal.woff2"
-  },
-  "node_modules/@fontsource/fira-mono/files/fira-mono-latin-ext-400-normal.woff2": {
-    "file": "_app/immutable/assets/fira-mono-latin-ext-400-normal-6bfabd30.woff2",
-    "src": "node_modules/@fontsource/fira-mono/files/fira-mono-latin-ext-400-normal.woff2"
   },
   "node_modules/@fontsource/fira-mono/files/fira-mono-all-400-normal.woff": {
     "file": "_app/immutable/assets/fira-mono-all-400-normal-1e3b098c.woff",
     "src": "node_modules/@fontsource/fira-mono/files/fira-mono-all-400-normal.woff"
   },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-f44ddab6.js",
+    "file": "_app/immutable/start-9d8d6af0.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -47,13 +47,13 @@
     ]
   },
   "src/routes/+layout.svelte": {
-    "file": "_app/immutable/components/pages/_layout.svelte-e29ca15c.js",
+    "file": "_app/immutable/components/pages/_layout.svelte-ceb5c4e9.js",
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "imports": [
       "_index-205ca844.js",
       "_stores-ba3e7fa5.js",
-      "_EmailSignUp-198df264.js"
+      "_EmailSignUp-f6c049cd.js"
     ],
     "css": [
       "_app/immutable/assets/+layout-da4e2ba4.css"
@@ -78,12 +78,12 @@
     ]
   },
   "src/routes/+page.svelte": {
-    "file": "_app/immutable/components/pages/_page.svelte-4a8259a1.js",
+    "file": "_app/immutable/components/pages/_page.svelte-5ac7b042.js",
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-205ca844.js",
-      "_EmailSignUp-198df264.js"
+      "_EmailSignUp-f6c049cd.js"
     ]
   },
   "src/routes/about/+page.svelte": {
@@ -174,8 +174,8 @@
       "_index-205ca844.js"
     ]
   },
-  "_EmailSignUp-198df264.js": {
-    "file": "_app/immutable/chunks/EmailSignUp-198df264.js",
+  "_EmailSignUp-f6c049cd.js": {
+    "file": "_app/immutable/chunks/EmailSignUp-f6c049cd.js",
     "imports": [
       "_index-205ca844.js"
     ]
@@ -203,7 +203,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/0.js": {
-    "file": "_app/immutable/chunks/0-b47a03e7.js",
+    "file": "_app/immutable/chunks/0-46272e68.js",
     "src": ".svelte-kit/generated/nodes/0.js",
     "isDynamicEntry": true,
     "imports": [
@@ -211,7 +211,7 @@
       "src/routes/+layout.svelte",
       "_index-205ca844.js",
       "_stores-ba3e7fa5.js",
-      "_EmailSignUp-198df264.js"
+      "_EmailSignUp-f6c049cd.js"
     ]
   },
   ".svelte-kit/generated/nodes/1.js": {
@@ -225,14 +225,14 @@
     ]
   },
   ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-4d447a67.js",
+    "file": "_app/immutable/chunks/2-2e51bc8c.js",
     "src": ".svelte-kit/generated/nodes/2.js",
     "isDynamicEntry": true,
     "imports": [
       "__page-d86dbbba.js",
       "src/routes/+page.svelte",
       "_index-205ca844.js",
-      "_EmailSignUp-198df264.js"
+      "_EmailSignUp-f6c049cd.js"
     ]
   },
   ".svelte-kit/generated/nodes/3.js": {
