@@ -21,21 +21,20 @@
 			return;
 		}
 
-		const headers = {
-			// 'Access-Control-Allow-Headers': 'Content-Type'
-		};
-
 		const options = {
 			method: 'POST',
-			headers,
+			headers: {
+				'Content-Type': 'application/json'
+			},
 			body: JSON.stringify({ email })
 		};
-
-		// const response = await fetch('http://localhost:8888/.netlify/functions/index', options);
-		const response = await fetch(
-			'https://rayse-sign-up.netlify.app/.netlify/functions/index',
-			options
-		);
+		// local
+		// const url = 'http://localhost:8888';
+		// draft
+		// const url = 'https://63439b72b7b1ef22e808eafd--rayse-sign-up.netlify.app';
+		// prod
+		const url = 'https://rayse-sign-up.netlify.app';
+		const response = await fetch(`${url}/api/index`, options);
 
 		if (response.ok) {
 			console.log('woot! ', response);
