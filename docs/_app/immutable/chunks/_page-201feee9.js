@@ -1,0 +1,1 @@
+import{e as s}from"./index-13e01da6.js";import{P as r,g as l}from"./data-09897df7.js";function n({params:o}){if(l().includes(o.slug)){const{title:t,content:e}=r[o.slug];return{title:t,content:e}}throw s(404,"Not found")}const i=Object.freeze(Object.defineProperty({__proto__:null,load:n},Symbol.toStringTag,{value:"Module"}));export{i as _,n as l};

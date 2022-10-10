@@ -1,5 +1,6 @@
 <script>
 	import { page } from '$app/stores';
+	let mobileNavHidden = true;
 </script>
 
 <header>
@@ -34,6 +35,7 @@
 				<button
 					id="nav-toggle"
 					class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+					on:click={() => (mobileNavHidden = !mobileNavHidden)}
 				>
 					<svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 						<title>Menu</title>
@@ -42,7 +44,9 @@
 				</button>
 			</div>
 			<div
-				class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
+				class="w-full flex-grow lg:flex lg:items-center lg:w-auto {mobileNavHidden
+					? 'hidden'
+					: ''} mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
 				id="nav-content"
 			>
 				<ul class="list-reset lg:flex justify-end flex-1 items-center">
