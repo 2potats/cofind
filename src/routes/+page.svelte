@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<title>RAYSE</title>
+	<title>CoFind</title>
 	<meta name="description" content="landing page" />
 </svelte:head>
 
