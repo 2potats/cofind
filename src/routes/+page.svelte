@@ -16,11 +16,11 @@
 			<div
 				class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left"
 			>
-				<p class="uppercase tracking-loose w-full">Dating apps got you down?</p>
+				<p class="uppercase tracking-loose w-full">Can't find a cofounder?</p>
 				<h1 class="my-4 text-5xl font-bold leading-tight">
-					Everyone deserves to find their perfect match
+					Everyone has their own skills and strengths
 				</h1>
-				<p class="leading-normal text-2xl mb-8">Let us help you express your best self</p>
+				<p class="leading-normal text-2xl mb-8">Let us help you find the best cofounder</p>
 				<!-- <button
 					class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-xl my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
 				>
@@ -75,50 +75,33 @@
 			</div> -->
 			<div class="flex flex-wrap">
 				<div class="w-full sm:w-1/2 p-6">
-					<h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">What does Rayse do?</h3>
+					<h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+						Why did we create CoFind?
+					</h3>
 					<p class="text-gray-600 mb-8">
-						We help you boost your profile on all the dating apps.
-						<br />
-						<br />
+						As an entrepreneur, there are never enough hours in a day.
 
-						Dating apps are a numbers game, but numbers don’t matter unless you match with the right
-						one. Rather than taking a one-size-fits-all approach, we consider your ideal type. Do
-						you want someone who can backpack around the world with you? Or someone who can stay in
-						and play video games with you? We will customize our feedback according to what you are
-						looking for.
+						<br />
+						<br />
+						Having to wear so many hats means it’s hard to be amazing in every function. Why not focus
+						on what you’re good at and let a cofounder take care of the rest?
+
+						<br />
+						<br />
+						With CoFind, you can do that.
+
+						<br />
+						<br />
+						We are currently an invite-only platform, working with vetted organizations, such as top
+						coding bootcamps, universities and MBA programs.
+
+						<br />
+						<br />
+						Launching in early 2023–join our mailing list to be the first to hear.
 					</p>
 				</div>
 				<div class="w-full sm:w-1/2 p-6">
-					<img class="w-full z-50" src="undraw-profile-yl.png" alt="dating profile" />
-				</div>
-			</div>
-			<div class="flex flex-wrap flex-col-reverse sm:flex-row">
-				<div class="w-full sm:w-1/2 p-6 mt-6">
 					<img class="w-full z-50" src="undraw-high-five-yl.png" alt="two people high fiving" />
-				</div>
-				<div class="w-full sm:w-1/2 p-6 mt-6">
-					<div class="align-middle">
-						<h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-							Why did we create Rayse?
-						</h3>
-						<p class="text-gray-600 mb-8">
-							Online dating can be tough. Sometimes toxic.
-							<br />
-							<br />
-							We want to create a supportive and constructive environment–whether it’s through our profile
-							review services, free articles and resources, or community forum (coming soon!).
-							<br />
-							<br />
-							We want to make your life easier. With our tips and feedback, you can optimize your profile–spend
-							less time on dating apps and find the right person faster.
-							<br />
-							<br />
-							We don’t want to break your bank. Paid premium services on dating apps can help boost your
-							profile, but if you want the maximum effect, optimize your profile first. You can choose
-							from our flexible and more affordable packages, or even ask your own questions. With our
-							customized experience, you might not even need those paid services.
-						</p>
-					</div>
 				</div>
 			</div>
 		</div>

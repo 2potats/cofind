@@ -23,6 +23,7 @@
 
 		const options = {
 			method: 'POST',
+			mode: 'no-cors',
 			headers: {
 				'Content-Type': 'application/json'
 			},
@@ -31,7 +32,7 @@
 		// local
 		// const url = 'http://localhost:8888';
 		// draft
-		// const url = 'https://6343a2fa9a2db32a0fd9db38--rayse-sign-up.netlify.app';
+		// const url = 'https://6367098a193dc15b1ce9c90b--rayse-signup-fn.netlify.app';
 		// prod
 		// const url = 'https://rayse-sign-up.netlify.app';
 		// prod 2

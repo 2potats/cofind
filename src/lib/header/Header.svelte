@@ -55,13 +55,6 @@
 							>Home</a
 						>
 					</li>
-					<li class="mr-3" class:font-semibold={$page.url.pathname === '/guides'}>
-						<a
-							class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-							sveltekit:prefetch
-							href="/guides">Guides</a
-						>
-					</li>
 					<li class="mr-3" class:font-semibold={$page.url.pathname === '/about'}>
 						<a
 							class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
